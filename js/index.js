@@ -26,7 +26,7 @@ $(document).ready(function(){
          if (phonenumber.length != 10)
         {
             $("#phonenumber").removeClass("border border-success").addClass("border border-danger");
-            let validPhoneNumber = false;
+            validPhoneNumber = false;
             $('#phonenumber').val('');
             $('#phonenumber').focus();
         } else {
@@ -50,7 +50,7 @@ $(document).ready(function(){
             validName = true;
         }
 
-        if(validName == true && validEmail == true && phonenumber == true && message == true){
+        if(validName == true && validEmail == true && validPhoneNumber == true && validMessage == true){
             $("form").unbind('submit').submit();
         }
     });

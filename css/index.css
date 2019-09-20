@@ -1,0 +1,33 @@
+.iti__flag {background-image: url("img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("img/flags@2x.png");}
+}
+header{
+    position: fixed;
+    width: 100%;
+}
+
+#map .staticmap {
+    background-image: url(https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyD0wILFMiGuB1qUIZrCIG88cPTWzcR1mlw&center=49.55378902974205,25.5719207519738&zoom=16&format=png&maptype=roadmap&size=480x360);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 360px;
+    padding-top: 70px;
+}
+
+#myForm .container {
+    width: 600px;
+    padding: 70px;
+    background-color: rgb(230, 230, 230)
+}
+#myForm .container h2{
+    text-align: center;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

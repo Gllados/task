@@ -9,10 +9,10 @@ $(document).ready(function(){
         event.preventDefault();
 
 
-        const name = $("#name").val();
-        const email = $("#email").val();
-        const phonenumber = $("#phonenumber").val();
-        const message = $("#message").val();
+        let name = $("#name").val();
+        let email = $("#email").val();
+        let phonenumber = $("#phonenumber").val();
+        let message = $("#message").val();
 
         if(name == ""){
             $("#name").removeClass("border border-success").addClass("border border-danger");
@@ -27,8 +27,7 @@ $(document).ready(function(){
         {
             $("#phonenumber").removeClass("border border-success").addClass("border border-danger");
             validPhoneNumber = false;
-            $('#phonenumber').val('');
-            $('#phonenumber').focus();
+
         } else {
             $("#phonenumber").removeClass("border border-danger").addClass("border border-success");
             validPhoneNumber = true;
@@ -36,18 +35,18 @@ $(document).ready(function(){
 
          if(email == ""){
             $("#email").removeClass("border border-success").addClass("border border-danger");
-            validName = false;
+            validEmail = false;
         } else {
             $("#email").removeClass("border border-danger").addClass("border border-success");
-            validName = true;
+            validEmail = true;
         }
 
         if(message == ""){
             $("#message").removeClass("border border-success").addClass("border border-danger");
-            validName = false;
+            validMessage = false;
         } else {
             $("#message").removeClass("border border-danger").addClass("border border-success");
-            validName = true;
+            validMessage = true;
         }
 
         if(validName == true && validEmail == true && validPhoneNumber == true && validMessage == true){

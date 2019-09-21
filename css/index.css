@@ -7,19 +7,25 @@ header{
     position: fixed;
     width: 100%;
 }
+header .container{
+    max-width: 800px;
+}
 
+#map {
+    padding: 100px 20px 20px 20px;
+    margin: auto
+}
 #map .staticmap {
-    background-image: url(https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyD0wILFMiGuB1qUIZrCIG88cPTWzcR1mlw&center=49.55378902974205,25.5719207519738&zoom=16&format=png&maptype=roadmap&size=480x360);
+    background-image: url(https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyD0wILFMiGuB1qUIZrCIG88cPTWzcR1mlw&center=49.55378902974205,25.5719207519738&zoom=16&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xebe3cd&style=element:labels.text.fill%7Ccolor:0x523735&style=element:labels.text.stroke%7Ccolor:0xf5f1e6&style=feature:administrative%7Celement:geometry.stroke%7Ccolor:0xc9b2a6&style=feature:administrative.land_parcel%7Celement:geometry.stroke%7Ccolor:0xdcd2be&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xae9e90&style=feature:landscape.natural%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x93817c&style=feature:poi.park%7Celement:geometry.fill%7Ccolor:0xbbd573&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x447530&style=feature:road%7Celement:geometry%7Ccolor:0xf5f1e6&style=feature:road.arterial%7Celement:geometry%7Ccolor:0xfdfcf8&style=feature:road.highway%7Celement:geometry%7Ccolor:0xf8c967&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0xe9bc62&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0xe98d58&style=feature:road.highway.controlled_access%7Celement:geometry.stroke%7Ccolor:0xdb8555&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x806b63&style=feature:transit.line%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:transit.line%7Celement:labels.text.fill%7Ccolor:0x8f7d77&style=feature:transit.line%7Celement:labels.text.stroke%7Ccolor:0xebe3cd&style=feature:transit.station%7Celement:geometry%7Ccolor:0xdfd2ae&style=feature:water%7Celement:geometry.fill%7Ccolor:0x9dddfb&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x92998d&size=480x360);
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center;
     height: 360px;
-    padding-top: 70px;
 }
 
 #myForm .container {
-    width: 600px;
+    max-width: 600px;
     padding: 70px;
-    background-color: rgb(230, 230, 230)
+    background-color: rgb(231, 238, 242)
 }
 #myForm .container h2{
     text-align: center;
